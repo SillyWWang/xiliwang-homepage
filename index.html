@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="王曦立的个人主页，包含教育经历、研究方向、论文、访问经历与实习经历。"
+    />
+    <title>王曦立 | Xili Wang</title>
+    <link rel="stylesheet" href="styles.css?v=3" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳转到正文</a>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="页面导航">
+        <p class="menu-title">menu</p>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About me</a>
+          <a href="#education">Education</a>
+          <a href="#collaborators">Collaborators</a>
+          <a href="#work">Work Experience</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#talks">Talks</a>
+          <a href="#honors">Honors</a>
+        </nav>
+      </aside>
+
+      <main id="main" class="content">
+        <section id="home" class="profile section-block" aria-labelledby="page-title">
+          <h1 id="page-title">王曦立 (Xili Wang)</h1>
+
+          <div class="profile-row">
+            <div class="profile-image">
+              <img src="assets/profile-photo.jpg" alt="王曦立照片" />
+            </div>
+
+            <div class="profile-info">
+              <p>
+                Ph.D.,<br />
+                School of Mathematical Sciences,<br />
+                Peking University
+              </p>
+              <p>
+                Email:
+                <a href="mailto:xiliwang17@fudan.edu.cn">xiliwang17 [AT] fudan.edu.cn</a>
+              </p>
+              <p>
+                Hobbies: Badminton and Karting
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section-block" aria-labelledby="about-title">
+          <h2 id="about-title">About me</h2>
+          <p>
+            I received my Ph.D. in Computational Mathematics from the School of Mathematical Sciences,
+            Peking University. Before that, I received my bachelor degree from the School of
+            Mathematical Sciences, Fudan University, majoring in Information and Computational
+            Science and ranking 1/52.
+          </p>
+        </section>
+
+        <section id="education" class="section-block" aria-labelledby="education-title">
+          <h2 id="education-title">Education</h2>
+          <div class="education-list">
+            <div class="education-item">
+              <strong>Peking University</strong>
+              <span class="education-date">Sep 2021 - Jun 2026</span>
+              <p>School of Mathematical Sciences, Computational Mathematics, Ph.D.</p>
+            </div>
+            <div class="education-item">
+              <strong>Fudan University</strong>
+              <span class="education-date">Sep 2017 - Jun 2021</span>
+              <p>School of Mathematical Sciences, Information and Computational Science, B.S., rank 1/52</p>
+            </div>
+            <div class="education-item">
+              <strong>Louisiana State University</strong>
+              <span class="education-date">Aug 2024 - Feb 2025</span>
+              <p>
+                Visiting scholar, Department of Mathematics, under the supervision of Professor
+                <a href="https://www.math.lsu.edu/~xlwan/" target="_blank" rel="noreferrer">Xiaoliang Wan</a>.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="collaborators" class="section-block" aria-labelledby="collaborators-title">
+          <h2 id="collaborators-title">Collaborators</h2>
+          <ul>
+            <li><a href="https://www.math.lsu.edu/~xlwan/" target="_blank" rel="noreferrer">Xiaoliang Wan</a></li>
+            <li><a href="https://www.tangkejun.com/" target="_blank" rel="noreferrer">Kejun Tang</a></li>
+          </ul>
+        </section>
+
+        <section id="work" class="section-block" aria-labelledby="work-title">
+          <h2 id="work-title">Work Experience</h2>
+          <p>
+            <strong>Meituan LongCat Team</strong>, Mar 2025 - Sep 2025<br />
+            Research intern and core member for agentic tool use, working on tool-use data synthesis,
+            supervised fine-tuning, and reinforcement learning for multi-turn LLM agents.
+          </p>
+          <ul>
+            <li>
+              Built automated multi-turn tool-use data synthesis pipelines based on Multi-LLMs and MCP.
+              The pipelines cover both simulated tool outputs with task-specific virtual databases and
+              real MCP tool execution through user-agent-tool interactions.
+            </li>
+            <li>
+              Used the synthesized multi-turn tool-use data for SFT of LongCat-Flash-Chat, improving
+              its agentic tool-use capability. LongCat-Flash-Chat achieved TAU2 Retail 71, TAU2 Airline
+              58, and TAU2 Telecom 68 on TAU2-Bench.
+            </li>
+            <li>
+              Worked on a multi-turn user-interacting reinforcement learning framework for agentic
+              tool use. The work introduces LLM-simulated users into RL rollout so that agents learn
+              to clarify dynamic user requirements, maintain task state, and coordinate tool calls
+              over long interactions.
+            </li>
+          </ul>
+        </section>
+
+        <section id="research" class="section-block" aria-labelledby="research-title">
+          <h2 id="research-title">Research</h2>
+          <p>My research interests include</p>
+          <ul>
+            <li>Computational statistics and adaptive sampling for scientific computing</li>
+            <li>Density estimation and deep generative models</li>
+            <li>Surrogate modeling and rare-event sampling</li>
+            <li>Numerical methods for PDE-constrained optimization problems</li>
+          </ul>
+        </section>
+
+        <section id="publications" class="section-block" aria-labelledby="publications-title">
+          <h2 id="publications-title">Publications and preprints</h2>
+          <ul class="publication-list">
+            <li>
+              Zhitao Zhu, <strong>Xili Wang<sup>&dagger;</sup></strong>, Shizhe Wu, Jiawei Fu, and Xiaoqing Liu.
+              <a href="https://arxiv.org/abs/2605.25698" target="_blank" rel="noreferrer">
+                How Should LLMs Consume High-Quality Data? Optimal Data Scheduling via
+                Quality-Aware Functional Scaling Laws</a>.
+              arXiv:2605.25698, 2026.
+            </li>
+            <li>
+              Yueyang Wang, Jiawei Fu, Baolong Bi, <strong>Xili Wang</strong>, and Xiaoqing Liu.
+              <a href="https://arxiv.org/abs/2601.20255" target="_blank" rel="noreferrer">
+                HE-SNR: Uncovering Latent Logic via Entropy for Guiding Mid-Training on SWE-bench</a>.
+              <em>International Conference on Machine Learning (ICML)</em>, 2026.
+              arXiv:2601.20255.
+            </li>
+            <li>
+              Meituan LongCat Team, including <strong>Xili Wang</strong>.
+              <a href="https://arxiv.org/abs/2509.01322" target="_blank" rel="noreferrer">
+                LongCat-Flash Technical Report</a>.
+              arXiv:2509.01322, 2025.
+            </li>
+            <li>
+              Yueyang Wang, Kejun Tang, <strong>Xili Wang</strong>, Xiaoliang Wan, Weiqing Ren, and
+              Chao Yang.
+              <a href="https://doi.org/10.1016/j.jcp.2025.114439" target="_blank" rel="noreferrer">
+                Estimating committor functions via deep adaptive sampling on rare transition paths</a>.
+              <em>Journal of Computational Physics</em>, 544:114439, 2026.
+            </li>
+            <li>
+              <strong>Xili Wang</strong>, Kejun Tang, Jiayu Zhai, Xiaoliang Wan, and Chao Yang.
+              <a href="https://doi.org/10.1007/s10915-024-02711-1" target="_blank" rel="noreferrer">
+                Deep Adaptive Sampling for Surrogate Modeling Without Labeled Data</a>.
+              <em>Journal of Scientific Computing</em>, 101:77, 2024.
+            </li>
+            <li>
+              <strong>Xili Wang</strong>, Pengfei Yin, Bo Zhang, and Chao Yang.
+              <a href="https://doi.org/10.1016/j.jcp.2024.113160" target="_blank" rel="noreferrer">
+                AONN-2: An adjoint-oriented neural network method for PDE-constrained shape optimization</a>.
+              <em>Journal of Computational Physics</em>, 513:113160, 2024.
+            </li>
+          </ul>
+          <p class="pub-note"><sup>&dagger;</sup> Corresponding author.</p>
+        </section>
+
+        <section class="section-block" aria-labelledby="patents-title">
+          <h2 id="patents-title">Patents</h2>
+          <ul>
+            <li>
+              杨超, <strong class="highlight-name">王曦立</strong>, 尹鹏飞, 张博.
+              形状优化方法及计算机存储介质和终端设备,
+              中国专利, CN116680763B[P], 2024-05-17.
+            </li>
+          </ul>
+        </section>
+
+        <section id="talks" class="section-block" aria-labelledby="talks-title">
+          <h2 id="talks-title">Invited talks</h2>
+          <ul>
+            <li>
+              "AONN-2: An adjoint-oriented neural network method for PDE-constrained shape optimization",
+              SIAM Conference on Mathematics of Data Science (MDS24), Atlanta, Georgia, USA, Oct 2024.
+            </li>
+            <li>
+              "DL for PDEs: towards parametric, high-dimensional and PDE-constrained optimization",
+              Louisiana State University, Baton Rouge, Louisiana, USA, Oct 2024.
+            </li>
+          </ul>
+        </section>
+
+        <section id="honors" class="section-block" aria-labelledby="honors-title">
+          <h2 id="honors-title">Honors and Awards</h2>
+          <ul>
+            <li>2023-2024 学年北京大学优秀科研奖</li>
+            <li>2023-2024 学年北京大学兴业银行奖学金</li>
+            <li>2022-2023 学年北京大学“硕博杯”羽毛球比赛第八名</li>
+            <li>
+              复旦大学“拔尖计划”荣誉学生，2021 年
+            </li>
+            <li>
+              2020-2021 学年复旦大学本科优秀学生奖学金（毕业生奖学金）
+            </li>
+            <li>
+              2019-2020 学年复旦大学本科优秀学生奖学金一等奖（董氏奖学金）
+            </li>
+            <li>2019-2020 学年复旦大学本科生专业奖学金</li>
+            <li>
+              2018-2019 学年复旦大学本科优秀学生奖学金二等奖
+            </li>
+            <li>2018-2019 学年复旦大学本科生专业奖学金</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
