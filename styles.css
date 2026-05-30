@@ -1,11 +1,11 @@
 :root {
   --page: #ffffff;
-  --menu-bg: #f1f1f1;
-  --menu-line: #d2d2d2;
+  --menu-bg: #f5f1fb;
+  --menu-line: #d7c8e8;
   --text: #000000;
-  --link: #284f7e;
-  --heading: #4169a1;
-  --rule: #bdbdbd;
+  --link: #6b3fa0;
+  --heading: #7a4ab2;
+  --rule: #c8b5dc;
 }
 
 * {
@@ -156,8 +156,8 @@ strong {
   display: block;
   width: 170px;
   overflow: hidden;
-  border: 1px solid #d9d9d9;
-  background: #fafafa;
+  border: 1px solid #d8c7e8;
+  background: #fbf8ff;
 }
 
 .profile-image img {
