@@ -74,20 +74,20 @@
           <h2 id="education-title">Education</h2>
           <div class="education-list">
             <div class="education-item">
-              <strong>Peking University</strong>
+              <div><strong>Peking University</strong>, Ph.D.</div>
               <span class="education-date">Sep 2021 - Jun 2026</span>
-              <p>School of Mathematical Sciences, Computational Mathematics, Ph.D.</p>
+              <p>School of Mathematical Sciences, Computational Mathematics</p>
             </div>
             <div class="education-item">
-              <strong>Fudan University</strong>
+              <div><strong>Fudan University</strong>, B.S.</div>
               <span class="education-date">Sep 2017 - Jun 2021</span>
-              <p>School of Mathematical Sciences, Information and Computational Science, B.S., rank 1/52</p>
+              <p>School of Mathematical Sciences, Information and Computational Science, rank 1/52</p>
             </div>
             <div class="education-item">
-              <strong>Louisiana State University</strong>
+              <div><strong>Louisiana State University</strong>, Visiting Scholar</div>
               <span class="education-date">Aug 2024 - Feb 2025</span>
               <p>
-                Department of Mathematics, visiting scholar, under the supervision of Professor
+                Department of Mathematics, under the supervision of Professor
                 <a href="https://www.math.lsu.edu/~xlwan/" target="_blank" rel="noreferrer">Xiaoliang Wan</a>
               </p>
             </div>
@@ -105,20 +105,22 @@
         <section id="work" class="section-block" aria-labelledby="work-title">
           <h2 id="work-title">Work Experience</h2>
           <p>
-            <strong>Meituan LongCat Team</strong>, Mar 2025 - Sep 2025<br />
-            Research intern and core member for agentic tool use, working on tool-use data synthesis,
+            <strong>Meituan LongCat Team</strong>, Research Intern, Mar 2025 - Sep 2025<br />
+            Core member for agentic tool use, working on tool-use data synthesis,
             supervised fine-tuning, and reinforcement learning for multi-turn LLM agents.
           </p>
           <ul>
             <li>
-              Built automated multi-turn tool-use data synthesis pipelines based on Multi-LLMs and MCP.
-              The pipelines cover both simulated tool outputs with task-specific virtual databases and
-              real MCP tool execution through user-agent-tool interactions.
+              Built two automated multi-turn tool-use data synthesis pipelines based on Multi-LLMs and MCP:
+              a simulation pipeline with task-specific virtual databases and a real-execution pipeline
+              that invokes MCP tools through user-agent-tool interactions.
             </li>
             <li>
-              Used the synthesized multi-turn tool-use data for SFT of LongCat-Flash-Chat, improving
-              its agentic tool-use capability. LongCat-Flash-Chat achieved TAU2 Retail 71, TAU2 Airline
-              58, and TAU2 Telecom 68 on TAU2-Bench (SOTA as of Jun 2025).
+              Used the synthesized multi-turn tool-use data for SFT of
+              <a href="https://huggingface.co/meituan-longcat/LongCat-Flash-Chat" target="_blank" rel="noreferrer">LongCat-Flash-Chat</a>,
+              a 560B-parameter MoE model, improving its agentic tool-use capability. LongCat-Flash-Chat
+              achieved TAU2 Retail 71, TAU2 Airline 58, and TAU2 Telecom 68 on TAU2-Bench
+              (SOTA as of Jun 2025).
             </li>
             <li>
               Worked on a multi-turn user-interacting reinforcement learning framework for agentic
