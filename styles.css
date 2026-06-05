@@ -1,11 +1,15 @@
 :root {
-  --page: #ffffff;
-  --menu-bg: #f5f1fb;
-  --menu-line: #d7c8e8;
-  --text: #000000;
-  --link: #6b3fa0;
-  --heading: #7a4ab2;
-  --rule: #c8b5dc;
+  --page: #080806;
+  --page-soft: #11100b;
+  --menu-bg: #0d0b07;
+  --menu-line: #5f4c1e;
+  --text: #f3ecd8;
+  --muted: #cfc4a4;
+  --link: #f1c75b;
+  --link-hover: #ffe08a;
+  --heading: #d4af37;
+  --strong: #f5d67a;
+  --rule: #80682a;
 }
 
 * {
@@ -18,7 +22,8 @@ html {
 
 body {
   margin: 0;
-  background: var(--page);
+  background:
+    linear-gradient(180deg, #0c0b08 0%, var(--page) 46%, #050505 100%);
   color: var(--text);
   font-family: Georgia, "Times New Roman", "Noto Serif CJK SC", "Songti SC", SimSun, serif;
   font-size: 16px;
@@ -32,6 +37,7 @@ a {
 }
 
 a:hover {
+  color: var(--link-hover);
   text-decoration: underline;
 }
 
@@ -46,7 +52,7 @@ img {
   top: 8px;
   z-index: 20;
   padding: 6px 8px;
-  background: var(--page);
+  background: var(--page-soft);
   color: var(--link);
   transform: translateY(-150%);
 }
@@ -70,12 +76,14 @@ img {
   padding: 28px 10px 18px;
   border-right: 1px solid var(--menu-line);
   background: var(--menu-bg);
+  box-shadow: 10px 0 28px rgba(0, 0, 0, 0.22);
 }
 
 .menu-title {
   margin: 0;
   padding-bottom: 2px;
   border-bottom: 1px solid var(--rule);
+  color: var(--heading);
   font-weight: 700;
 }
 
@@ -105,10 +113,11 @@ h1 {
   margin: 0 0 24px;
   padding-bottom: 4px;
   border-bottom: 4px solid var(--rule);
-  color: var(--heading);
+  color: var(--link-hover);
   font-size: 30px;
   line-height: 1.15;
   letter-spacing: 0;
+  text-shadow: 0 0 18px rgba(212, 175, 55, 0.18);
 }
 
 h2 {
@@ -119,6 +128,7 @@ h2 {
   font-size: 23px;
   line-height: 1.18;
   letter-spacing: 0;
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.12);
 }
 
 p {
@@ -135,11 +145,12 @@ li {
 }
 
 strong {
+  color: var(--strong);
   font-weight: 700;
 }
 
 .highlight-name {
-  color: #000000;
+  color: var(--strong);
   font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: 900;
 }
@@ -156,8 +167,11 @@ strong {
   display: block;
   width: 170px;
   overflow: hidden;
-  border: 1px solid #d8c7e8;
-  background: #fbf8ff;
+  border: 1px solid #a88436;
+  background: #151006;
+  box-shadow:
+    0 0 0 1px rgba(255, 224, 138, 0.12),
+    0 14px 28px rgba(0, 0, 0, 0.28);
 }
 
 .profile-image img {
@@ -181,6 +195,7 @@ strong {
 }
 
 .education-date {
+  color: var(--muted);
   font-style: italic;
   white-space: nowrap;
 }
