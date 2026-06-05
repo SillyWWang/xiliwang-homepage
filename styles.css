@@ -2,14 +2,15 @@
   --page: #ffffff;
   --page-soft: #ffffff;
   --menu-bg: #ffffff;
-  --menu-line: #c9d1d9;
+  --menu-line: #aaaaaa;
   --text: #000000;
   --muted: #3f3f3f;
-  --link: #000000;
-  --link-hover: #000000;
-  --heading: #000000;
+  --link: #022b6d;
+  --link-hover: #001b46;
+  --heading: #527bbd;
+  --heading-rule: #527bbd;
   --strong: #000000;
-  --rule: #c9d1d9;
+  --rule: #aaaaaa;
 }
 
 * {
@@ -32,10 +33,9 @@ body {
 
 a {
   color: var(--link);
-  font-weight: 700;
   text-decoration: underline;
-  text-decoration-color: #aeb8c2;
-  text-decoration-thickness: 1.5px;
+  text-decoration-color: rgba(2, 43, 109, 0.58);
+  text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
   transition:
     background-color 140ms ease,
@@ -44,7 +44,7 @@ a {
 }
 
 a:hover {
-  background: rgba(201, 209, 217, 0.28);
+  background: rgba(82, 123, 189, 0.12);
   color: var(--link-hover);
   text-decoration-color: currentColor;
 }
@@ -135,8 +135,8 @@ img {
 h1 {
   margin: 0 0 24px;
   padding-bottom: 4px;
-  border-bottom: 4px solid var(--rule);
-  color: var(--link-hover);
+  border-bottom: 4px solid var(--heading-rule);
+  color: var(--heading);
   font-size: 30px;
   line-height: 1.15;
   letter-spacing: 0;
