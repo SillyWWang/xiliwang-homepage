@@ -178,26 +178,29 @@ strong {
 
 .profile-row {
   display: grid;
-  grid-template-columns: 170px minmax(0, 1fr);
+  grid-template-columns: auto minmax(0, 1fr);
   gap: 20px;
   align-items: center;
   margin-left: 8px;
 }
 
 .profile-image {
-  display: block;
-  width: 170px;
+  display: flex;
+  gap: 10px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.profile-image img {
+  width: 150px;
+  height: auto;
   overflow: hidden;
   border: 1px solid #cfcfcf;
   background: #ffffff;
   box-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.03),
     0 12px 24px rgba(0, 0, 0, 0.08);
-}
-
-.profile-image img {
-  width: 100%;
-  height: auto;
 }
 
 .profile-info {
@@ -280,7 +283,11 @@ strong {
   }
 
   .profile-image {
-    width: min(100%, 190px);
+    width: auto;
+  }
+
+  .profile-image img {
+    width: min(45%, 170px);
   }
 
 }
