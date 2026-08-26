@@ -239,6 +239,19 @@ strong {
   font-size: 15px;
 }
 
+.corresponding-author {
+  margin-left: 0.08em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0;
+}
+
+.pub-note .corresponding-author {
+  margin-left: 0;
+}
+
 @media (max-width: 760px) {
   body {
     font-size: 15px;
