@@ -55,6 +55,7 @@ a:focus-visible {
   text-decoration: underline;
 }
 
+.oral-note,
 .oral-link,
 .oral-link:hover,
 .oral-link:focus-visible {
