@@ -55,6 +55,13 @@ a:focus-visible {
   text-decoration: underline;
 }
 
+.oral-link,
+.oral-link:hover,
+.oral-link:focus-visible {
+  color: #c05a00;
+  text-decoration: none;
+}
+
 img {
   display: block;
   max-width: 100%;
